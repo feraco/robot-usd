@@ -1,0 +1,747 @@
+#usda 1.0
+(
+    defaultPrim = "crazyflie"
+    doc = """Generated from Composed Stage of root layer /workspace/robot-usd/Crazyflie/cf2x_visible.usda
+"""
+    endTimeCode = 72
+    startTimeCode = 1
+    timeCodesPerSecond = 24
+)
+
+def Xform "crazyflie"
+{
+    double3 xformOp:translate:translate.timeSamples = {
+        1: (0, 0.026105238444010317, 0),
+        2: (0, 0.05176380902050415, 0),
+        3: (0, 0.07653668647301796, 0),
+        4: (0, 0.09999999999999999, 0),
+        5: (0, 0.12175228580174413, 0),
+        6: (0, 0.1414213562373095, 0),
+        7: (0, 0.15867066805824703, 0),
+        8: (0, 0.17320508075688773, 0),
+        9: (0, 0.18477590650225736, 0),
+        10: (0, 0.19318516525781368, 0),
+        11: (0, 0.19828897227476208, 0),
+        12: (0, 0.2, 0),
+        13: (0, 0.19828897227476208, 0),
+        14: (0, 0.19318516525781368, 0),
+        15: (0, 0.1847759065022574, 0),
+        16: (0, 0.17320508075688776, 0),
+        17: (0, 0.15867066805824703, 0),
+        18: (0, 0.14142135623730953, 0),
+        19: (0, 0.12175228580174419, 0),
+        20: (0, 0.09999999999999999, 0),
+        21: (0, 0.07653668647301798, 0),
+        22: (0, 0.0517638090205042, 0),
+        23: (0, 0.0261052384440104, 0),
+        24: (0, 2.4492935982947065e-17, 0),
+        25: (0, -0.026105238444010356, 0),
+        26: (0, -0.05176380902050416, 0),
+        27: (0, -0.07653668647301794, 0),
+        28: (0, -0.09999999999999995, 0),
+        29: (0, -0.12175228580174413, 0),
+        30: (0, -0.14142135623730942, 0),
+        31: (0, -0.158670668058247, 0),
+        32: (0, -0.17320508075688767, 0),
+        33: (0, -0.1847759065022574, 0),
+        34: (0, -0.19318516525781368, 0),
+        35: (0, -0.19828897227476208, 0),
+        36: (0, -0.2, 0),
+        37: (0, -0.1982889722747621, 0),
+        38: (0, -0.1931851652578137, 0),
+        39: (0, -0.1847759065022574, 0),
+        40: (0, -0.17320508075688773, 0),
+        41: (0, -0.15867066805824714, 0),
+        42: (0, -0.14142135623730953, 0),
+        43: (0, -0.12175228580174419, 0),
+        44: (0, -0.10000000000000009, 0),
+        45: (0, -0.07653668647301792, 0),
+        46: (0, -0.051763809020504314, 0),
+        47: (0, -0.02610523844401034, 0),
+        48: (0, -4.898587196589413e-17, 0),
+        49: (0, 0.026105238444010238, 0),
+        50: (0, 0.05176380902050422, 0),
+        51: (0, 0.07653668647301783, 0),
+        52: (0, 0.1, 0),
+        53: (0, 0.12175228580174412, 0),
+        54: (0, 0.14142135623730948, 0),
+        55: (0, 0.15867066805824712, 0),
+        56: (0, 0.17320508075688767, 0),
+        57: (0, 0.1847759065022573, 0),
+        58: (0, 0.19318516525781368, 0),
+        59: (0, 0.19828897227476208, 0),
+        60: (0, 0.2, 0),
+        61: (0, 0.1982889722747621, 0),
+        62: (0, 0.1931851652578137, 0),
+        63: (0, 0.18477590650225736, 0),
+        64: (0, 0.17320508075688784, 0),
+        65: (0, 0.15867066805824706, 0),
+        66: (0, 0.14142135623730942, 0),
+        67: (0, 0.1217522858017442, 0),
+        68: (0, 0.09999999999999996, 0),
+        69: (0, 0.0765366864730181, 0),
+        70: (0, 0.05176380902050416, 0),
+        71: (0, 0.02610523844401019, 0),
+        72: (0, 7.347880794884119e-17, 0),
+    }
+    uniform token[] xformOpOrder = ["xformOp:translate:translate"]
+
+    def Xform "body"
+    {
+        def Cube "main"
+        {
+            rel material:binding = </Materials_crazyflie_body_main_material>
+            double size = 1
+            float3 xformOp:scale = (3, 0.5, 3)
+            uniform token[] xformOpOrder = ["xformOp:scale"]
+        }
+
+        def Cylinder "circuit"
+        {
+            double height = 0.1
+            rel material:binding = </Materials_crazyflie_body_circuit_material>
+            double radius = 1.4
+            double3 xformOp:translate = (0, 0.3, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cube "battery"
+        {
+            rel material:binding = </Materials_crazyflie_body_battery_material>
+            double size = 1
+            float3 xformOp:scale = (1.5, 0.3, 1)
+            double3 xformOp:translate = (0, -0.3, 0)
+            uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:translate"]
+        }
+
+        def Cylinder "arm_1"
+        {
+            double height = 2
+            rel material:binding = </Materials_crazyflie_body_arm_1_material>
+            double radius = 0.1
+            float xformOp:rotateY = 45
+            float xformOp:rotateZ = 90
+            double3 xformOp:translate = (0.75, 0, 0.75)
+            uniform token[] xformOpOrder = ["xformOp:rotateZ", "xformOp:rotateY", "xformOp:translate"]
+        }
+
+        def Cylinder "motor_1"
+        {
+            double height = 0.3
+            rel material:binding = </Materials_crazyflie_body_motor_1_material>
+            double radius = 0.3
+            double3 xformOp:translate = (1.5, 0, 1.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cylinder "arm_2"
+        {
+            double height = 2
+            rel material:binding = </Materials_crazyflie_body_arm_2_material>
+            double radius = 0.1
+            float xformOp:rotateY = 135
+            float xformOp:rotateZ = 90
+            double3 xformOp:translate = (-0.75, 0, 0.75)
+            uniform token[] xformOpOrder = ["xformOp:rotateZ", "xformOp:rotateY", "xformOp:translate"]
+        }
+
+        def Cylinder "motor_2"
+        {
+            double height = 0.3
+            rel material:binding = </Materials_crazyflie_body_motor_2_material>
+            double radius = 0.3
+            double3 xformOp:translate = (-1.5, 0, 1.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cylinder "arm_3"
+        {
+            double height = 2
+            rel material:binding = </Materials_crazyflie_body_arm_3_material>
+            double radius = 0.1
+            float xformOp:rotateY = -135
+            float xformOp:rotateZ = 90
+            double3 xformOp:translate = (-0.75, 0, -0.75)
+            uniform token[] xformOpOrder = ["xformOp:rotateZ", "xformOp:rotateY", "xformOp:translate"]
+        }
+
+        def Cylinder "motor_3"
+        {
+            double height = 0.3
+            rel material:binding = </Materials_crazyflie_body_motor_3_material>
+            double radius = 0.3
+            double3 xformOp:translate = (-1.5, 0, -1.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cylinder "arm_4"
+        {
+            double height = 2
+            rel material:binding = </Materials_crazyflie_body_arm_4_material>
+            double radius = 0.1
+            float xformOp:rotateY = -45
+            float xformOp:rotateZ = 90
+            double3 xformOp:translate = (0.75, 0, -0.75)
+            uniform token[] xformOpOrder = ["xformOp:rotateZ", "xformOp:rotateY", "xformOp:translate"]
+        }
+
+        def Cylinder "motor_4"
+        {
+            double height = 0.3
+            rel material:binding = </Materials_crazyflie_body_motor_4_material>
+            double radius = 0.3
+            double3 xformOp:translate = (1.5, 0, -1.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+    }
+
+    def Cylinder "prop_1"
+    {
+        double height = 0.05
+        rel material:binding = </Materials_crazyflie_prop_1_material>
+        double radius = 0.8
+        double xformOp:rotateY:rotateY.timeSamples = {
+            1: -30,
+            2: -60,
+            3: -90,
+            4: -120,
+            5: -150,
+            6: -180,
+            7: -210,
+            8: -240,
+            9: -270,
+            10: -300,
+            11: -330,
+            12: -360,
+            13: -390,
+            14: -420,
+            15: -450,
+            16: -480,
+            17: -510,
+            18: -540,
+            19: -570,
+            20: -600,
+            21: -630,
+            22: -660,
+            23: -690,
+            24: -720,
+            25: -750,
+            26: -780,
+            27: -810,
+            28: -840,
+            29: -870,
+            30: -900,
+            31: -930,
+            32: -960,
+            33: -990,
+            34: -1020,
+            35: -1050,
+            36: -1080,
+            37: -1110,
+            38: -1140,
+            39: -1170,
+            40: -1200,
+            41: -1230,
+            42: -1260,
+            43: -1290,
+            44: -1320,
+            45: -1350,
+            46: -1380,
+            47: -1410,
+            48: -1440,
+            49: -1470,
+            50: -1500,
+            51: -1530,
+            52: -1560,
+            53: -1590,
+            54: -1620,
+            55: -1650,
+            56: -1680,
+            57: -1710,
+            58: -1740,
+            59: -1770,
+            60: -1800,
+            61: -1830,
+            62: -1860,
+            63: -1890,
+            64: -1920,
+            65: -1950,
+            66: -1980,
+            67: -2010,
+            68: -2040,
+            69: -2070,
+            70: -2100,
+            71: -2130,
+            72: -2160,
+        }
+        double3 xformOp:translate = (1.5, 0.2, 1.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY:rotateY"]
+    }
+
+    def Cylinder "prop_2"
+    {
+        double height = 0.05
+        rel material:binding = </Materials_crazyflie_prop_2_material>
+        double radius = 0.8
+        double xformOp:rotateY:rotateY.timeSamples = {
+            1: 30,
+            2: 60,
+            3: 90,
+            4: 120,
+            5: 150,
+            6: 180,
+            7: 210,
+            8: 240,
+            9: 270,
+            10: 300,
+            11: 330,
+            12: 360,
+            13: 390,
+            14: 420,
+            15: 450,
+            16: 480,
+            17: 510,
+            18: 540,
+            19: 570,
+            20: 600,
+            21: 630,
+            22: 660,
+            23: 690,
+            24: 720,
+            25: 750,
+            26: 780,
+            27: 810,
+            28: 840,
+            29: 870,
+            30: 900,
+            31: 930,
+            32: 960,
+            33: 990,
+            34: 1020,
+            35: 1050,
+            36: 1080,
+            37: 1110,
+            38: 1140,
+            39: 1170,
+            40: 1200,
+            41: 1230,
+            42: 1260,
+            43: 1290,
+            44: 1320,
+            45: 1350,
+            46: 1380,
+            47: 1410,
+            48: 1440,
+            49: 1470,
+            50: 1500,
+            51: 1530,
+            52: 1560,
+            53: 1590,
+            54: 1620,
+            55: 1650,
+            56: 1680,
+            57: 1710,
+            58: 1740,
+            59: 1770,
+            60: 1800,
+            61: 1830,
+            62: 1860,
+            63: 1890,
+            64: 1920,
+            65: 1950,
+            66: 1980,
+            67: 2010,
+            68: 2040,
+            69: 2070,
+            70: 2100,
+            71: 2130,
+            72: 2160,
+        }
+        double3 xformOp:translate = (-1.5, 0.2, 1.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY:rotateY"]
+    }
+
+    def Cylinder "prop_3"
+    {
+        double height = 0.05
+        rel material:binding = </Materials_crazyflie_prop_3_material>
+        double radius = 0.8
+        double xformOp:rotateY:rotateY.timeSamples = {
+            1: -30,
+            2: -60,
+            3: -90,
+            4: -120,
+            5: -150,
+            6: -180,
+            7: -210,
+            8: -240,
+            9: -270,
+            10: -300,
+            11: -330,
+            12: -360,
+            13: -390,
+            14: -420,
+            15: -450,
+            16: -480,
+            17: -510,
+            18: -540,
+            19: -570,
+            20: -600,
+            21: -630,
+            22: -660,
+            23: -690,
+            24: -720,
+            25: -750,
+            26: -780,
+            27: -810,
+            28: -840,
+            29: -870,
+            30: -900,
+            31: -930,
+            32: -960,
+            33: -990,
+            34: -1020,
+            35: -1050,
+            36: -1080,
+            37: -1110,
+            38: -1140,
+            39: -1170,
+            40: -1200,
+            41: -1230,
+            42: -1260,
+            43: -1290,
+            44: -1320,
+            45: -1350,
+            46: -1380,
+            47: -1410,
+            48: -1440,
+            49: -1470,
+            50: -1500,
+            51: -1530,
+            52: -1560,
+            53: -1590,
+            54: -1620,
+            55: -1650,
+            56: -1680,
+            57: -1710,
+            58: -1740,
+            59: -1770,
+            60: -1800,
+            61: -1830,
+            62: -1860,
+            63: -1890,
+            64: -1920,
+            65: -1950,
+            66: -1980,
+            67: -2010,
+            68: -2040,
+            69: -2070,
+            70: -2100,
+            71: -2130,
+            72: -2160,
+        }
+        double3 xformOp:translate = (-1.5, 0.2, -1.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY:rotateY"]
+    }
+
+    def Cylinder "prop_4"
+    {
+        double height = 0.05
+        rel material:binding = </Materials_crazyflie_prop_4_material>
+        double radius = 0.8
+        double xformOp:rotateY:rotateY.timeSamples = {
+            1: 30,
+            2: 60,
+            3: 90,
+            4: 120,
+            5: 150,
+            6: 180,
+            7: 210,
+            8: 240,
+            9: 270,
+            10: 300,
+            11: 330,
+            12: 360,
+            13: 390,
+            14: 420,
+            15: 450,
+            16: 480,
+            17: 510,
+            18: 540,
+            19: 570,
+            20: 600,
+            21: 630,
+            22: 660,
+            23: 690,
+            24: 720,
+            25: 750,
+            26: 780,
+            27: 810,
+            28: 840,
+            29: 870,
+            30: 900,
+            31: 930,
+            32: 960,
+            33: 990,
+            34: 1020,
+            35: 1050,
+            36: 1080,
+            37: 1110,
+            38: 1140,
+            39: 1170,
+            40: 1200,
+            41: 1230,
+            42: 1260,
+            43: 1290,
+            44: 1320,
+            45: 1350,
+            46: 1380,
+            47: 1410,
+            48: 1440,
+            49: 1470,
+            50: 1500,
+            51: 1530,
+            52: 1560,
+            53: 1590,
+            54: 1620,
+            55: 1650,
+            56: 1680,
+            57: 1710,
+            58: 1740,
+            59: 1770,
+            60: 1800,
+            61: 1830,
+            62: 1860,
+            63: 1890,
+            64: 1920,
+            65: 1950,
+            66: 1980,
+            67: 2010,
+            68: 2040,
+            69: 2070,
+            70: 2100,
+            71: 2130,
+            72: 2160,
+        }
+        double3 xformOp:translate = (1.5, 0.2, -1.5)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY:rotateY"]
+    }
+}
+
+def Material "Materials_crazyflie_body_main_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_body_main_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.1, 0.1, 0.1)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_body_circuit_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_body_circuit_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0, 0.5, 0)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_body_battery_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_body_battery_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.8, 0.8, 0.8)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_body_arm_1_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_body_arm_1_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.3, 0.3, 0.3)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_body_arm_2_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_body_arm_2_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.3, 0.3, 0.3)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_body_arm_3_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_body_arm_3_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.3, 0.3, 0.3)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_body_arm_4_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_body_arm_4_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.3, 0.3, 0.3)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_body_motor_1_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_body_motor_1_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.25, 0.25, 0.25)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_body_motor_2_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_body_motor_2_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.25, 0.25, 0.25)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_body_motor_3_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_body_motor_3_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.25, 0.25, 0.25)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_body_motor_4_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_body_motor_4_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.25, 0.25, 0.25)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_prop_1_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_prop_1_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.8, 0, 0)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_prop_2_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_prop_2_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0, 0, 0.8)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_prop_3_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_prop_3_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0.8, 0, 0)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def Material "Materials_crazyflie_prop_4_material"
+{
+    token outputs:surface.connect = </Materials_crazyflie_prop_4_material/shader.outputs:surface>
+
+    def Shader "shader"
+    {
+        uniform token info:id = "UsdPreviewSurface"
+        color3f inputs:diffuseColor = (0, 0, 0.8)
+        float inputs:metallic = 0
+        float inputs:roughness = 0.4
+        token outputs:surface
+    }
+}
+
+def DistantLight "Light"
+{
+    float inputs:angle = 0.53
+    color3f inputs:color = (1, 1, 1)
+    float inputs:intensity = 500
+}
+
