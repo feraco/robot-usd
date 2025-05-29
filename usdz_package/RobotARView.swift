@@ -15,6 +15,7 @@ struct RobotARView: View {
             VStack {
                 Spacer()
                 
+                // First row of buttons
                 HStack {
                     Button(action: {
                         modelName = "b2_animated"
@@ -56,6 +57,42 @@ struct RobotARView: View {
                         Text("Custom Drone")
                             .padding()
                             .background(modelName == "custom_drone_example" ? Color.blue : Color.gray)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                    }
+                }
+                
+                // Second row of buttons for different Crazyflie variants
+                HStack {
+                    Button(action: {
+                        modelName = "cf2x_scenekit_animated"
+                        modelScale = 1.0
+                    }) {
+                        Text("SceneKit CF")
+                            .padding()
+                            .background(modelName == "cf2x_scenekit_animated" ? Color.blue : Color.gray)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                    }
+                    
+                    Button(action: {
+                        modelName = "cf2x_explicit_animated"
+                        modelScale = 1.0
+                    }) {
+                        Text("Explicit CF")
+                            .padding()
+                            .background(modelName == "cf2x_explicit_animated" ? Color.blue : Color.gray)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                    }
+                    
+                    Button(action: {
+                        modelName = "cf2x_ios_animated"
+                        modelScale = 1.0
+                    }) {
+                        Text("iOS CF")
+                            .padding()
+                            .background(modelName == "cf2x_ios_animated" ? Color.blue : Color.gray)
                             .foregroundColor(.white)
                             .cornerRadius(8)
                     }

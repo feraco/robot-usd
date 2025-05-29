@@ -27,6 +27,16 @@ If you want to create an animated USDZ file that preserves all the original geom
 
 This approach is ideal when you want to maintain the original geometry but customize the colors and ensure proper propeller animation.
 
+#### iOS and SceneKit Compatible Animations
+
+For better compatibility with iOS, macOS, and SceneKit, we provide three specialized scripts:
+
+1. **`create_scenekit_compatible_crazyflie.py`**: Creates a USDZ file optimized for SceneKit with proper animation hierarchy.
+2. **`create_explicit_animation_crazyflie.py`**: Uses explicit animation on the propeller meshes for better compatibility.
+3. **`create_ios_compatible_crazyflie.py`**: Uses iOS-specific animation techniques and settings for optimal compatibility.
+
+These scripts produce USDZ files that should work well when viewed directly in iOS/macOS or when imported into Xcode projects with RealityKit or SceneKit.
+
 #### Using Original USD Geometry with Original Materials
 
 If you want to create an animated USDZ file that preserves all the original geometry and materials from a USD file, you can use the `create_original_animated_crazyflie.py` script. This script:
